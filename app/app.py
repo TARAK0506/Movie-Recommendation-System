@@ -6,7 +6,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 def fetch_poster(movie_id):
-    url = "https://api.themoviedb.org/3/movie/{}?api_key=7c07966174136f9405dddf9d9bc163f0&language=en-US".format(movie_id)
+    url = "https://api.themoviedb.org/3/movie/{}?api_key={YOUR API KEY}&language=en-US".format(movie_id)
     
     response = requests.get(url)
     data = response.json()
